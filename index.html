@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Valentines Day 2024</title>
+        <link href="css/main.css" rel="stylesheet">
+        <link href="css/player.css" rel="stylesheet">
+        <link href="css/background.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    </head>
+    <body>
+    <canvas id="glow-layer"></canvas>
+    <canvas id="canvas"></canvas>
+    <div class="valentines_card" onclick="onClickOpen()">
+        <div class="front_card" id="fc">
+            <img alt="" class="front_img" src="image/vday.png">
+            <div class="front_heart_icon"></div>
+            <div class="front_text">
+                <h3>Send to my love</h3>
+            </div>
+        </div>
+        <div class="inside_card">
+<!--            <img alt="" class="inside_img" src="image/inside.png">-->
+<!--            <div class="played">-->
+
+                <div class="player">
+                    <div class="cover"></div>
+                    <div class="player-ui">
+                        <div class="title">
+                            <h3>Happy Ending</h3>
+                        </div>
+                        <div class="small">
+                            <i class="material-icons">replay</i>
+                            <i class="material-icons" id="btn-volume">volume_up</i>
+                        </div>
+                        <div class="progress">
+                            <div class="played">
+                                <div class="circle"></div>
+                            </div>
+                        </div>
+                        <div class="controls">
+                            <i class="material-icons" style="visibility: hidden">play_arrow</i>
+                            <i class="material-icons" id="btn-play">play_arrow</i>
+                            <i class="material-icons" style="visibility: hidden">play_arrow</i>
+                        </div>
+                    </div>
+                </div>
+<!--                <div class="player-ui">-->
+<!--                    <div class="title">-->
+<!--                        <h3>Hello</h3>-->
+<!--                    </div>-->
+<!--                    <div class="small">-->
+<!--                        <i class="material-icons">replay</i>-->
+<!--                        <p>Adele</p>-->
+<!--                        <i class="material-icons">volume_up</i>-->
+<!--                    </div>-->
+<!--                    <div class="progress">-->
+<!--                        <div class="played">-->
+<!--                            <div class="circle"></div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="controls">-->
+<!--                        <i class="material-icons">skip_previous</i>-->
+<!--                        <i class="material-icons">play_arrow</i>-->
+<!--                        <i class="material-icons">skip_next</i>-->
+<!--                    </div>-->
+<!--                </div>-->
+                <audio controls id="audio">
+<!--                    <source src="audio/videoplayback.webm" type="audio/mp3">-->
+                  </audio>
+<!--            </div>-->
+            <div class="inside_text">
+                <h4>Straight from my heart of someone who adores you more than words can say.</h4>
+                <h3>Wishing you a Valentine's Day filled with all the joy and warmth you bring into my life!</h3>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/gh/SeanFree/Vector2@master/Vector2.min.js"></script>
+    <script src="./js/transition.js"></script>
+    <script src="./js/main.js"></script>
+    <script  src="./js/background.js"></script>
+    </body>
+</html>
